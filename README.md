@@ -3,7 +3,7 @@
 
 ```python
 
-class IxKian(metaclass=ABCMeta):
+class arused(metaclass=ABCMeta):
     @abstractstaticmethod
     def contact():
         return ["discord", "telegram"]
