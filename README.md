@@ -1,35 +1,40 @@
-### Arused D3V
+> **Warning**
+
+
+```python
+
+class IxKian(metaclass=ABCMeta):
+    @abstractstaticmethod
+    def contact():
+        return ["discord", "telegram"]
+
+    @abstractstaticmethod
+    def life():
+        return self.coding()
+
+    @abstractstaticmethod
+    def coding():
+        pass
+
+
+class Attributes(arused):
+    @staticmethod
+    def contact() -> tuple:
+        discord: str = "^"
+        telegram: str = "arused"
+
+        return discord, telegram
+
+    @staticmethod
+    def life() -> tuple:
+        langs = ("hebrew", "English")
+
+        return langs
+
+    @staticmethod
+    def coding() -> tuple:
+        text_editor = "vscode,pycharm"
+        specialities = ["reverse engineering", "automation"]
+        langs = {"engineering": "python", "c#": "go", "learning": "js"}
+        return langs, specialities, text_editor
 ```
-class Arused:
-    def __init__(self, name):
-        self.name = name
-
-    def reverse_string(self, text):
-        return text[::-1]
-
-    def perform_reverse_engineering(self, target):
-       # Tiktok API , Mobile API
-        pass
-
-    def perform_favorite_activity(self):
-        # Pornhub.com
-        pass
-```
-<!--
-```
-class Arused:
-    def __init__(self, name):
-        self.name = name
-
-    def reverse_string(self, text):
-        return text[::-1]
-
-    def perform_reverse_engineering(self, target):
-       # Tiktok API , Mobile API
-        pass
-
-    def perform_favorite_activity(self):
-        # Pornhub.com
-        pass
-
--->
