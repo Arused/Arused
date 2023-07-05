@@ -1,40 +1,36 @@
-> **Warning**
-
-
-```python
-
-class arused(metaclass=ABCMeta):
-    @abstractstaticmethod
-    def contact():
-        return ["discord", "telegram"]
-
-    @abstractstaticmethod
-    def life():
-        return self.coding()
-
-    @abstractstaticmethod
-    def coding():
-        pass
-
-
-class Attributes(arused):
+> **reversed your mom**
+```
+class HeaderRetriever:
     @staticmethod
-    def contact() -> tuple:
-        discord: str = "^"
-        telegram: str = "arused"
+    def retrieve_headers(url):
+        response = requests.head(url)
+        return response.headers
 
-        return discord, telegram
 
+class DiscordInfo:
     @staticmethod
-    def life() -> tuple:
-        langs = ("hebrew", "English")
+    def get_username():
+        return "arused"
 
-        return langs
 
-    @staticmethod
-    def coding() -> tuple:
-        text_editor = "vscode,pycharm"
-        specialities = ["reverse engineering", "automation"]
-        langs = {"engineering": "python", "c#": "go", "learning": "js"}
-        return langs, specialities, text_editor
+class DiscordServer:
+    def __init__(self, server_url):
+        self.server_url = server_url
+
+    def get_invite_link(self):
+        return self.server_url
+
+
+url = "https://github.com/Arused"
+headers = HeaderRetriever.retrieve_headers(url)
+for key, value in headers.items():
+    print(f"{key}: {value}")
+
+username = DiscordInfo.get_username()
+print(f"Discord username: {username}")
+
+server_url = ".gg/dast"
+server = DiscordServer(server_url)
+invite_link = server.get_invite_link()
+print(f"Discord server invite link: {invite_link}")
 ```
